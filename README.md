@@ -4,8 +4,9 @@ Very simple mod press `b` key toggle noclip
 
 ## Installation
 1. Download [BepInEx](https://github.com/BepInEx/BepInEx) and [install](https://docs.bepinex.dev/articles/user_guide/installation/index.html).
-2. Download [BepinEx-Utils](https://github.com/T2PeNBiX99wcoxKv3A4g/BepinEx-Utils/releases/latest) then put .dll file to `game folder/BepInEx/plugins`
-3. Launch game
+2. Download [BepinEx-Utils](https://github.com/T2PeNBiX99wcoxKv3A4g/BepinEx-Utils/releases/latest).
+3. Extract all the .dll file to `game folder/BepInEx/plugins`
+4. Launch game
 
 ## Configuration
 The mod configuration file name is `io.github.ykysnk.HKS-NoClip.cfg` inside `game folder/BepInEx/config`,
