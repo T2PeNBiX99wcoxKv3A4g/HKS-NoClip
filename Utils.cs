@@ -9,7 +9,8 @@ public static class Utils
     internal const string Guid = "io.github.ykysnk.HKS-NoClip";
     internal const string Name = "No Clip";
     internal const string Version = "0.0.1";
+    internal const string GameName = "Hollow Knight Silksong.exe";
 
     private static Logger? _logger;
-    public static Logger Logger => _logger ??= new Logger(Name);
+    public static Logger Logger => _logger ??= new(Name);
 }

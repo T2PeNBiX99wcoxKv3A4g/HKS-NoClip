@@ -19,4 +19,34 @@ internal class HeroControllerPatches
         Utils.Logger.Debug($"controller {controller}");
         controller.Controller = __instance;
     }
+
+    [HarmonyPatch(nameof(FixedUpdate))]
+    [HarmonyPostfix]
+    private static void FixedUpdate(HeroController __instance)
+    {
+        if (!HeroNoClipController.Instance) return;
+        var noClipController = HeroNoClipController.Instance;
+        noClipController.FixVelocity();
+    }
+
+    private static bool ChangeCanTakeDamage(ref bool __result)
+    {
+        if (!HeroNoClipController.Instance) return true;
+        var noClipController = HeroNoClipController.Instance;
+        if (!noClipController.IsNoClip) return true;
+        if (!Main.Invincible.Value()) return true;
+        __result = false;
+        return false;
+    }
+
+    [HarmonyPatch(nameof(CanTakeDamage))]
+    [HarmonyPrefix]
+    private static bool CanTakeDamage(HeroController __instance, ref bool __result) =>
+        ChangeCanTakeDamage(ref __result);
+
+    [HarmonyPatch(nameof(CanTakeDamageIgnoreInvul))]
+    [HarmonyPrefix]
+    // ReSharper disable once IdentifierTypo
+    private static bool CanTakeDamageIgnoreInvul(HeroController __instance, ref bool __result) =>
+        ChangeCanTakeDamage(ref __result);
 }

@@ -15,4 +15,7 @@ public static class HeroControllerEX
 
     public static TraverseEX<PlayerData> playerData(this HeroController instance) =>
         new(Traverse.Create(instance).Field<PlayerData>(nameof(playerData)));
+
+    public static TraverseEX<InputHandler> inputHandler(this HeroController instance) =>
+        new(Traverse.Create(instance).Field<InputHandler>(nameof(inputHandler)));
 }
