@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.0](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.1.1...v0.2.0) (2025-10-04)
+
+### Features
+
+* Add quick toggle noclip function ([f2175cf](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/f2175cf588110f6a1183e35750273f580db86092))
+
+### Bug Fixes
+
+* Clean code ([8797372](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/8797372377de77cbbb882411c4eee0444756df57))
+
 ### [0.1.1](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.1.0...v0.1.1) (2025-10-03)
 
 ### Bug Fixes
