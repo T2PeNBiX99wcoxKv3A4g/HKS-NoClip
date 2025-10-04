@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace HKS_NoClip.Behaviour;
@@ -7,6 +8,11 @@ public class HeroNoClipController : MonoBehaviour
     public HeroController? Controller { get; internal set; }
     public static HeroNoClipController? Instance { get; private set; }
     private Vector2? _lastVelocity;
+
+    private float _needTime;
+    private bool _isHold;
+    private bool _holdChangeNoClip;
+    private bool _isSetNoClip;
 
     internal bool IsNoClip { get; private set; }
 
@@ -19,15 +25,45 @@ public class HeroNoClipController : MonoBehaviour
     {
         if (!Controller) return;
         HandleNoClip();
+        QuickToggleNoClip();
         if (!Input.GetKeyDown(Main.NoClipToggleKey.Value())) return;
         ToggleNoClip();
-        Utils.Logger.Info($"No Clip is now {(Controller.GetIsNoClip() ? "On" : "Off")}");
+        Utils.Logger.Info($"No Clip is now {(IsNoClip ? "On" : "Off")}");
     }
 
     private void FixedUpdate()
     {
         if (!Controller) return;
         FixBodyType();
+    }
+
+    private void QuickToggleNoClip()
+    {
+        if (!Main.QuickToggleNoClip.Value()) return;
+        if (!Controller) return;
+        var inputHandler = Controller.inputHandler().V;
+        if (!inputHandler) return;
+        if (!IsNoClip && (!inputHandler.inputActions.Jump.IsPressed || !inputHandler.inputActions.Up.IsPressed) ||
+            IsNoClip && !inputHandler.inputActions.Jump.IsPressed)
+        {
+            _needTime = -1;
+            _isHold = false;
+            _isSetNoClip = false;
+            return;
+        }
+
+        if (!_isHold)
+            _holdChangeNoClip = !IsNoClip;
+        _isHold = true;
+        if (_needTime < 0)
+            _needTime = Time.time + Main.QuickToggleNoClipWaitTime.Value();
+
+        // Utils.Logger.Debug($"_needTime {_needTime}, Time.time {Time.time}");
+
+        if (_needTime < 0 || Time.time < _needTime || _isSetNoClip) return;
+        ToggleNoClip(_holdChangeNoClip);
+        Utils.Logger.Info($"No Clip is now {(IsNoClip ? "On" : "Off")}");
+        _isSetNoClip = true;
     }
 
     private void ToggleNoClip(bool value)
@@ -47,12 +83,13 @@ public class HeroNoClipController : MonoBehaviour
             if (Controller.Body)
                 Controller.Body.bodyType = RigidbodyType2D.Dynamic;
         }
+
+        IsNoClip = value;
     }
 
     private void ToggleNoClip()
     {
-        IsNoClip = !IsNoClip;
-        ToggleNoClip(IsNoClip);
+        ToggleNoClip(!IsNoClip);
     }
 
     private void HandleNoClip()
