@@ -26,9 +26,33 @@ If you are not using any mod manager, you can manually change the value, also if
 installed [BepinEx Configuration Manager](https://github.com/BepInEx/BepInEx.ConfigurationManager), you can change any
 values in game instead.
 
-* `NoClipToggleKey` Default `B` - The key to toggle noclip in game.
-* `TurnOffCol2d` Default `false` - Turn off player collider when noclip is on. (If collider is on may cause some issues)
-* `Invincible` Default `false` - Make player invincible when noclip is on.
-* `QuickToggleNoClip` Default `true` - Quickly toggle noclip by keep holding jump key and up arrow key.
-* `Speed` Default `30` - The speed of the player in noclip.
-* `QuickToggleNoClipWaitTime` Default `2` - The holding time need to quick toggle noclip.
+* `NoClipToggleKey`
+    * Type: `Keybind`
+    * Default: `B`
+    * Description:
+        * The key to toggle noclip in the game.
+* `TurnOffCol2d`
+    * Type: `Boolean`
+    * Default: `false`
+    * Description:
+        * Turn off player collider when noclip is on. (If collider is on may cause some issues).
+* `Invincible`
+    * Type: `Boolean`
+    * Default: `false`
+    * Description:
+        * Make the player invincible when noclip is on.
+* `QuickToggleNoClip`
+    * Type: `Boolean`
+    * Default: `true`
+    * Description:
+        * Quickly toggle noclip by keep holding jump key and up arrow key.
+* `Speed`
+    * Type: `Integer`
+    * Default: `30`
+    * Description:
+        * The speed of the player in noclip.
+* `QuickToggleNoClipWaitTime`
+    * Type: `Integer`
+    * Default: `2`
+    * Description:
+        * The holding time needs to quickly toggle noclip.
