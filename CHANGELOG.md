@@ -1,5 +1,11 @@
 # Changelog
 
+### [0.2.1](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.0...v0.2.1) (2025-10-04)
+
+### Bug Fixes
+
+* Upgrade config descriptions ([cd3409b](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/cd3409b6f18240f00eb1a9d7c694e7d35380ff99))
+
 ## [0.2.0](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.1.1...v0.2.0) (2025-10-04)
 
 ### Features
