@@ -47,12 +47,12 @@ values in game instead.
     * Description:
         * Quickly toggle noclip by keep holding jump key and up arrow key.
 * `Speed`
-    * Type: `Integer`
+    * Type: `Float`
     * Default: `30`
     * Description:
         * The speed of the player in noclip.
 * `QuickToggleNoClipWaitTime`
-    * Type: `Integer`
+    * Type: `Float`
     * Default: `2`
     * Description:
         * The holding time needs to quickly toggle noclip.
