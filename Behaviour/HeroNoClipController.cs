@@ -1,18 +1,17 @@
-using System.Collections;
 using UnityEngine;
 
 namespace HKS_NoClip.Behaviour;
 
 public class HeroNoClipController : MonoBehaviour
 {
-    public HeroController? Controller { get; internal set; }
-    public static HeroNoClipController? Instance { get; private set; }
+    private bool _holdChangeNoClip;
+    private bool _isHold;
+    private bool _isSetNoClip;
     private Vector2? _lastVelocity;
 
     private float _needTime;
-    private bool _isHold;
-    private bool _holdChangeNoClip;
-    private bool _isSetNoClip;
+    public HeroController? Controller { get; internal set; }
+    public static HeroNoClipController? Instance { get; private set; }
 
     internal bool IsNoClip { get; private set; }
 
@@ -43,8 +42,8 @@ public class HeroNoClipController : MonoBehaviour
         if (!Controller) return;
         var inputHandler = Controller.inputHandler().V;
         if (!inputHandler) return;
-        if (!IsNoClip && (!inputHandler.inputActions.Jump.IsPressed || !inputHandler.inputActions.Up.IsPressed) ||
-            IsNoClip && !inputHandler.inputActions.Jump.IsPressed)
+        if ((!IsNoClip && (!inputHandler.inputActions.Jump.IsPressed || !inputHandler.inputActions.Up.IsPressed)) ||
+            (IsNoClip && !inputHandler.inputActions.Jump.IsPressed))
         {
             _needTime = -1;
             _isHold = false;

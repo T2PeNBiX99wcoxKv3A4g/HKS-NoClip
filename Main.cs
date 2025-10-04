@@ -10,7 +10,7 @@ namespace HKS_NoClip;
 [BepInProcess(Utils.GameName)]
 public class Main : BaseUnityPlugin
 {
-    private readonly Harmony _harmony = new(Utils.Guid);
+    private const string SectionOptions = "Options";
 
     internal static ConfigEntry<KeyCode>? NoClipToggleKey;
     internal static ConfigEntry<bool>? TurnOffCol2d;
@@ -18,8 +18,7 @@ public class Main : BaseUnityPlugin
     internal static ConfigEntry<bool>? QuickToggleNoClip;
     internal static ConfigEntry<float>? Speed;
     internal static ConfigEntry<float>? QuickToggleNoClipWaitTime;
-
-    private const string SectionOptions = "Options";
+    private readonly Harmony _harmony = new(Utils.Guid);
 
     private void Awake()
     {
