@@ -1,5 +1,11 @@
 # Changelog
 
+### [0.2.5](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.4...v0.2.5) (2025-10-05)
+
+### Bug Fixes
+
+* **Workflow:** Correct commit message to reference Main.cs instead of Utils.cs ([c98e226](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/c98e2266c5a902fb2db82a4d022acbcd276e42f6))
+
 ### [0.2.4](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.3...v0.2.4) (2025-10-05)
 
 ### Bug Fixes
