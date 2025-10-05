@@ -1,5 +1,11 @@
 # Changelog
 
+### [0.2.3](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.2...v0.2.3) (2025-10-05)
+
+### Bug Fixes
+
+* Upgrade .dll files ([49a9368](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/49a9368226f4ba86e993f882c9b69c5b14cb0ebd))
+
 ### [0.2.2](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.1...v0.2.2) (2025-10-05)
 
 ### Bug Fixes
