@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.7](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.6...v0.2.7) (2025-10-05)
+
+### Bug Fixes
+
+* Add save data fix for upgrades from old versions ([cc463ce](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/cc463ce3c03fa44f76e3262263f0af8255962709))
+
 ## [0.2.6](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.5...v0.2.6) (2025-10-05)
 
 ### Bug Fixes
