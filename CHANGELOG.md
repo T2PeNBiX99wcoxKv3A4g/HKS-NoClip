@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.6](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.5...v0.2.6) (2025-10-05)
+
+### Bug Fixes
+
+* **CHANGELOG:** Update titles from h3 to h2 format ([a119ca4](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/a119ca43eaee457cf8a461cd8e947236005a303c))
+
 ## [0.2.5](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.4...v0.2.5) (2025-10-05)
 
 ### Bug Fixes
