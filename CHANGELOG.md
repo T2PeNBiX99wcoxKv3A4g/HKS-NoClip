@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.9](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.8...v0.2.9) (2025-10-05)
+
+### Bug Fixes
+
+* Clean code ([a04a1d3](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/a04a1d3d56eded122c94f18ba23d24a2261272c1))
+
 ## [0.2.8](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.7...v0.2.8) (2025-10-05)
 
 ### Bug Fixes
