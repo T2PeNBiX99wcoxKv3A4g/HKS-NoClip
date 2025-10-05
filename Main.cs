@@ -12,6 +12,7 @@ namespace HKS_NoClip;
 [ConfigBind<bool>("Invincible", SectionOptions, false, "Make the player invincible when noclip is on.")]
 [ConfigBind<bool>("QuickToggleNoClip", SectionOptions, true,
     "Quickly toggle noclip by keep holding jump key and up arrow key.")]
+[ConfigBind<bool>("FixFromOldVersion", SectionOptions, true, "If upgrade from old version, fix the save data issues.")]
 [ConfigBind<float>("Speed", SectionOptions, 30f, "The speed of the player in noclip.")]
 [ConfigBind<float>("QuickToggleNoClipWaitTime", SectionOptions, 2f, "The holding time needs to quickly toggle noclip.")]
 public partial class Main
