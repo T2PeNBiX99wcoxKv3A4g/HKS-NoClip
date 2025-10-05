@@ -121,12 +121,12 @@ public class HeroNoClipController : MonoBehaviour
         if (!Controller || !IsNoClip || !_lastVelocity.HasValue) return;
         Controller.Body.linearVelocity = _lastVelocity ?? Vector2.zero;
     }
-    
+
     private void FixUpgradeFromOldVersion()
     {
         if (!Controller || !Configs.FixFromOldVersion) return;
         var isUpgrade = false;
-        
+
         if (Controller.playerData().V.isInvincible)
         {
             Controller.playerData().V.isInvincible = false;
@@ -138,7 +138,7 @@ public class HeroNoClipController : MonoBehaviour
             Controller.playerData().V.infiniteAirJump = false;
             isUpgrade = true;
         }
-        
+
         if (isUpgrade)
             Utils.Logger.Info("Upgrade from old version, automatically fix the save data issues.");
         Configs.FixFromOldVersion = false;
