@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.8](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.7...v0.2.8) (2025-10-05)
+
+### Bug Fixes
+
+* Upgrade BepInExUtils.Generator.dll to fix config key ([ea7727d](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/ea7727de90cafe03b486202e866eab5b9f42687a))
+
 ## [0.2.7](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.6...v0.2.7) (2025-10-05)
 
 ### Bug Fixes
