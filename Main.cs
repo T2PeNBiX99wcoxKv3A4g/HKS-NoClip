@@ -19,7 +19,7 @@ public partial class Main
     private const string SectionOptions = "Options";
     private const string Version = "0.2.3";
 
-    public void PostAwake()
+    protected override void PostAwake()
     {
     }
 }
