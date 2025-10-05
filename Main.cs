@@ -1,41 +1,25 @@
-﻿using System.Reflection;
-using BepInEx;
-using BepInEx.Configuration;
-using HarmonyLib;
+﻿using BepInEx;
+using BepInExUtils.Attributes;
 using UnityEngine;
 
 namespace HKS_NoClip;
 
-[BepInPlugin(Utils.Guid, Utils.Name, Utils.Version)]
+[BepInUtils("io.github.ykysnk.HKS-NoClip", "No Clip", Version)]
 [BepInProcess(Utils.GameName)]
-public class Main : BaseUnityPlugin
+[ConfigBind<KeyCode>("NoClipToggleKey", SectionOptions, KeyCode.B, "The key to toggle noclip in the game.")]
+[ConfigBind<bool>("TurnOffCol2d", SectionOptions, false,
+    "Turn off player collider when noclip is on. (If collider is on may cause some issues).")]
+[ConfigBind<bool>("Invincible", SectionOptions, false, "Make the player invincible when noclip is on.")]
+[ConfigBind<bool>("QuickToggleNoClip", SectionOptions, true,
+    "Quickly toggle noclip by keep holding jump key and up arrow key.")]
+[ConfigBind<float>("Speed", SectionOptions, 30f, "The speed of the player in noclip.")]
+[ConfigBind<float>("QuickToggleNoClipWaitTime", SectionOptions, 2f, "The holding time needs to quickly toggle noclip.")]
+public partial class Main
 {
     private const string SectionOptions = "Options";
+    private const string Version = "0.2.1";
 
-    internal static ConfigEntry<KeyCode>? NoClipToggleKey;
-    internal static ConfigEntry<bool>? TurnOffCol2d;
-    internal static ConfigEntry<bool>? Invincible;
-    internal static ConfigEntry<bool>? QuickToggleNoClip;
-    internal static ConfigEntry<float>? Speed;
-    internal static ConfigEntry<float>? QuickToggleNoClipWaitTime;
-    private readonly Harmony _harmony = new(Utils.Guid);
-
-    private void Awake()
+    public void PostAwake()
     {
-        Utils.Logger.Info($"Plugin {Utils.Name} loaded, version {Utils.Version}");
-        _harmony.PatchAll(Assembly.GetExecutingAssembly());
-
-        NoClipToggleKey = Config.Bind(SectionOptions, nameof(NoClipToggleKey), KeyCode.B,
-            "The key to toggle noclip in the game.");
-        TurnOffCol2d = Config.Bind(SectionOptions, nameof(TurnOffCol2d), false,
-            "Turn off player collider when noclip is on. (If collider is on may cause some issues).");
-        Invincible = Config.Bind(SectionOptions, nameof(Invincible), false,
-            "Make the player invincible when noclip is on.");
-        QuickToggleNoClip = Config.Bind(SectionOptions, nameof(QuickToggleNoClip), true,
-            "Quickly toggle noclip by keep holding jump key and up arrow key.");
-        Speed = Config.Bind(SectionOptions, nameof(Speed), 30f,
-            "The speed of the player in noclip.");
-        QuickToggleNoClipWaitTime = Config.Bind(SectionOptions, nameof(QuickToggleNoClipWaitTime), 2f,
-            "The holding time needs to quickly toggle noclip.");
     }
 }

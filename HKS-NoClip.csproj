@@ -14,6 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Analyzer Include="Lib\BepInExUtils.Generator.dll"/>
         <Reference Include="0Harmony">
             <HintPath>Lib\0Harmony.dll</HintPath>
         </Reference>

@@ -34,7 +34,7 @@ internal class HeroControllerPatches
         if (!HeroNoClipController.Instance) return true;
         var noClipController = HeroNoClipController.Instance;
         if (!noClipController.IsNoClip) return true;
-        if (!Main.Invincible.Value()) return true;
+        if (!Configs.Invincible) return true;
         __result = false;
         return false;
     }

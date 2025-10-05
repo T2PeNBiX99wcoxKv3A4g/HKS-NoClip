@@ -25,7 +25,7 @@ public class HeroNoClipController : MonoBehaviour
         if (!Controller) return;
         HandleNoClip();
         QuickToggleNoClip();
-        if (!Input.GetKeyDown(Main.NoClipToggleKey.Value())) return;
+        if (!Input.GetKeyDown(Configs.NoClipToggleKey)) return;
         ToggleNoClip();
         Utils.Logger.Info($"No Clip is now {(IsNoClip ? "On" : "Off")}");
     }
@@ -38,7 +38,7 @@ public class HeroNoClipController : MonoBehaviour
 
     private void QuickToggleNoClip()
     {
-        if (!Main.QuickToggleNoClip.Value()) return;
+        if (!Configs.QuickToggleNoClip) return;
         if (!Controller) return;
         var inputHandler = Controller.inputHandler().V;
         if (!inputHandler) return;
@@ -55,7 +55,7 @@ public class HeroNoClipController : MonoBehaviour
             _holdChangeNoClip = !IsNoClip;
         _isHold = true;
         if (_needTime < 0)
-            _needTime = Time.time + Main.QuickToggleNoClipWaitTime.Value();
+            _needTime = Time.time + Configs.QuickToggleNoClipWaitTime;
 
         // Utils.Logger.Debug($"_needTime {_needTime}, Time.time {Time.time}");
 
@@ -70,7 +70,7 @@ public class HeroNoClipController : MonoBehaviour
         if (!Controller) return;
         if (value)
         {
-            if (Main.TurnOffCol2d.Value())
+            if (Configs.TurnOffCol2d)
                 Controller.col2d().V.enabled = false;
             if (Controller.Body)
                 Controller.Body.bodyType = RigidbodyType2D.Kinematic;
@@ -99,7 +99,7 @@ public class HeroNoClipController : MonoBehaviour
         var vel = Vector2.zero;
         var inputVel = inputHandler.inputActions.MoveVector.Vector;
 
-        vel += inputVel * Main.Speed.Value();
+        vel += inputVel * Configs.Speed;
 
         if (inputHandler.inputActions.Dash.IsPressed)
             vel *= 2f;
