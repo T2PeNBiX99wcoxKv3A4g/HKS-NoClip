@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.11](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.10..v0.2.11) - 2025-10-06
+
+### 🐛 Bug Fixes
+
+- Refactor `HeroControllerEX` extensions and update `.dll` files - ([8830845](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/8830845e98a8534fee8ab577ee82c4633fea6804))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([41d1a08](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/41d1a080e43b99e7a45dd5e61c1c11ee02dd368e))
+
+
 ## [0.2.10](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.9..v0.2.10) - 2025-10-06
 
 ### 🐛 Bug Fixes
