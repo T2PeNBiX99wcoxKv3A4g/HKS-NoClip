@@ -41,7 +41,7 @@ public class HeroNoClipController : MonoBehaviour
     {
         if (!Configs.QuickToggleNoClip) return;
         if (!Controller) return;
-        var inputHandler = Controller.inputHandler().V;
+        var inputHandler = Controller.inputHandler;
         if (!inputHandler) return;
         if ((!IsNoClip && (!inputHandler.inputActions.Jump.IsPressed || !inputHandler.inputActions.Up.IsPressed)) ||
             (IsNoClip && !inputHandler.inputActions.Jump.IsPressed))
@@ -72,14 +72,14 @@ public class HeroNoClipController : MonoBehaviour
         if (value)
         {
             if (Configs.TurnOffCol2d)
-                Controller.col2d().V.enabled = false;
+                Controller.col2d.enabled = false;
             if (Controller.Body)
                 Controller.Body.bodyType = RigidbodyType2D.Kinematic;
         }
         else
         {
-            if (!Controller.col2d().V.enabled)
-                Controller.col2d().V.enabled = true;
+            if (!Controller.col2d.enabled)
+                Controller.col2d.enabled = true;
             if (Controller.Body)
                 Controller.Body.bodyType = RigidbodyType2D.Dynamic;
         }
@@ -95,7 +95,7 @@ public class HeroNoClipController : MonoBehaviour
     private void HandleNoClip()
     {
         if (!Controller || !IsNoClip) return;
-        var inputHandler = Controller.inputHandler().V;
+        var inputHandler = Controller.inputHandler;
         if (!inputHandler) return;
         var vel = Vector2.zero;
         var inputVel = inputHandler.inputActions.MoveVector.Vector;
@@ -127,15 +127,15 @@ public class HeroNoClipController : MonoBehaviour
         if (!Controller || !Configs.FixFromOldVersion) return;
         var isUpgrade = false;
 
-        if (Controller.playerData().V.isInvincible)
+        if (Controller.playerData.isInvincible)
         {
-            Controller.playerData().V.isInvincible = false;
+            Controller.playerData.isInvincible = false;
             isUpgrade = true;
         }
 
-        if (Controller.playerData().V.infiniteAirJump)
+        if (Controller.playerData.infiniteAirJump)
         {
-            Controller.playerData().V.infiniteAirJump = false;
+            Controller.playerData.infiniteAirJump = false;
             isUpgrade = true;
         }
 

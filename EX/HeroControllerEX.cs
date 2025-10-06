@@ -1,4 +1,5 @@
 using HarmonyLib;
+using JetBrains.Annotations;
 using UnityEngine;
 
 // ReSharper disable InconsistentNaming
@@ -7,15 +8,27 @@ namespace HKS_NoClip.EX;
 
 public static class HeroControllerEX
 {
-    public static TraverseEX<Rigidbody2D> rb2d(this HeroController instance) =>
-        new(Traverse.Create(instance).Field<Rigidbody2D>(nameof(rb2d)));
+    extension(HeroController instance)
+    {
+        [UsedImplicitly]
+        public Rigidbody2D rb2d
+        {
+            get => Traverse.Create(instance).Field<Rigidbody2D>("rb2d").Value;
+            set => Traverse.Create(instance).Field<Rigidbody2D>("rb2d").Value = value;
+        }
 
-    public static TraverseEX<Collider2D> col2d(this HeroController instance) =>
-        new(Traverse.Create(instance).Field<Collider2D>(nameof(col2d)));
+        [UsedImplicitly]
+        public Collider2D col2d
+        {
+            get => Traverse.Create(instance).Field<Collider2D>("col2d").Value;
+            set => Traverse.Create(instance).Field<Collider2D>("col2d").Value = value;
+        }
 
-    public static TraverseEX<PlayerData> playerData(this HeroController instance) =>
-        new(Traverse.Create(instance).Field<PlayerData>(nameof(playerData)));
-
-    public static TraverseEX<InputHandler> inputHandler(this HeroController instance) =>
-        new(Traverse.Create(instance).Field<InputHandler>(nameof(inputHandler)));
+        [UsedImplicitly]
+        public InputHandler inputHandler
+        {
+            get => Traverse.Create(instance).Field<InputHandler>("inputHandler").Value;
+            set => Traverse.Create(instance).Field<InputHandler>("inputHandler").Value = value;
+        }
+    }
 }
