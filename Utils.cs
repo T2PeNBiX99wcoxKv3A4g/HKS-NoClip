@@ -1,4 +1,4 @@
-global using HKS_NoClip.EX;
+global using HKS_NoClip.Extensions;
 
 namespace HKS_NoClip;
 
