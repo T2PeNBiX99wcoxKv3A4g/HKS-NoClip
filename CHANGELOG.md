@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.14](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.13..v0.2.14) - 2025-10-08
+
+### 🐛 Bug Fixes
+
+- *(Workflow)* Update workflows, add publishing to Thunderstore, and enhance version handling - ([39afdfc](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/39afdfc8826430b429fc1472a503fa4577b09055))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([32d143c](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/32d143c3d164b3f26f68985b8913cf58f9be28af))
+
+
 ## [0.2.13](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.12..v0.2.13) - 2025-10-07
 
 ### 🐛 Bug Fixes
