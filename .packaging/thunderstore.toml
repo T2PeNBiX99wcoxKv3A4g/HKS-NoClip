@@ -1,0 +1,28 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "ykysnk"
+name = "HKS_NoClip"
+versionNumber = "0.0.1" # will be replaced
+description = "Very simple mod press b key toggle noclip, Compatible with controller."
+websiteUrl = "https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip"
+containsNsfwContent = false
+[package.dependencies]
+BepInEx-BepInExPack_Silksong = "5.4.2303"
+ykysnk-BepinExUtils = "0.4.4"
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./dist"
+target = ""
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["hollow-knight-silksong", ]
+[publish.categories]
+hollow-knight-silksong = ["mods", "tools", ]

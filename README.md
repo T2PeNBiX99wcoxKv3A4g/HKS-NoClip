@@ -3,6 +3,8 @@
 Very simple mod press `b` key toggle noclip  
 Compatible with controller
 
+![icon.png](https://raw.githubusercontent.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/refs/heads/master/icon.png)
+
 ## Controls
 
 * Toggle noclip by pressing `b` key by default.
