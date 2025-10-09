@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.15](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.14..v0.2.15) - 2025-10-09
+
+### 🐛 Bug Fixes
+
+- Update `BepInExUtils.Generator.dll` file to fix version issue - ([54c1827](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/54c1827bfcd0bd1be60a407afa665d11bfc3a5f5))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([f2dec0d](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/f2dec0de9156bba5ab1b873197fdf1d4e78f6298))
+
+
 ## [0.2.14](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.13..v0.2.14) - 2025-10-08
 
 ### 🐛 Bug Fixes
