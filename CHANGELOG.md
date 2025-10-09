@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.16](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.15..v0.2.16) - 2025-10-09
+
+### 🐛 Bug Fixes
+
+- Upgrade `BepInEx-BepInExPack_Silksong` dependency and update `.dll` files - ([c274dee](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/c274deecf1c6512b0ddb754adb0a7d0bf130c437))
+- Update `Utils.cs` and `BepInExUtils.Generator.dll` - ([31f7ec2](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/31f7ec245c4996f158fb56457cad2dcda1e66a4d))
+- Update `BepInExUtils.dll` file - ([cd72e45](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/cd72e452240b6b8ae639b3b1539e1c83641cad19))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([4ecd7b9](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/4ecd7b94254145877403d4d16da4057594d44970))
+
+
 ## [0.2.15](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.14..v0.2.15) - 2025-10-09
 
 ### 🐛 Bug Fixes
