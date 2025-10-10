@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.17](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.16..v0.2.17) - 2025-10-10
+
+### 🐛 Bug Fixes
+
+- Update `.dll` files - ([00c3fd4](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/00c3fd4f48cae39c0876d12e1a08093bd8c75c14))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([ae61d9b](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/ae61d9b6aec61020884ecc6d5e825c568311be59))
+
+
 ## [0.2.16](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.15..v0.2.16) - 2025-10-09
 
 ### 🐛 Bug Fixes
