@@ -34,6 +34,18 @@
         <Reference Include="HarmonyXInterop">
             <HintPath>Lib\HarmonyXInterop.dll</HintPath>
         </Reference>
+        <Reference Include="Mono.Cecil">
+            <HintPath>Lib\Mono.Cecil.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil.Mdb">
+            <HintPath>Lib\Mono.Cecil.Mdb.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil.Pdb">
+            <HintPath>Lib\Mono.Cecil.Pdb.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil.Rocks">
+            <HintPath>Lib\Mono.Cecil.Rocks.dll</HintPath>
+        </Reference>
         <Reference Include="MonoMod.RuntimeDetour">
             <HintPath>Lib\MonoMod.RuntimeDetour.dll</HintPath>
         </Reference>
