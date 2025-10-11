@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.18](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.17..v0.2.18) - 2025-10-11
+
+### 🐛 Bug Fixes
+
+- *(Workflow)* Add `git pull` step to release workflow - ([ca3b8ba](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/ca3b8bac9998eabd95c66dbf61a4af96b845abcc))
+- Update `BepInExUtils.dll` and `BepInExUtils.Generator.dll` files - ([dd6a94c](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/dd6a94cebd5194edba18b05c0dca025b0896b1f5))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([d57032a](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/d57032a5d1e11fc3143c2857e8dc90dd52579c4c))
+
+
 ## [0.2.17](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.16..v0.2.17) - 2025-10-10
 
 ### 🐛 Bug Fixes
