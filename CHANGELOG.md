@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.19](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.18..v0.2.19) - 2025-10-15
+
+### 🐛 Bug Fixes
+
+- Correct namespace and remove redundant comments in `HeroControllerPatches.cs` - ([1e280ab](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/1e280ab0be1c080a3b957539926fc9891f4de873))
+- Update `BepInExUtils.dll` and `BepInExUtils.Generator.dll` files - ([b700bb0](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/b700bb01db067a9dfa08bea22d411c3858ad8d4e))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([ebff147](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/ebff147eb0361482c7f2b6662247615bf23ad434))
+
+
 ## [0.2.18](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.17..v0.2.18) - 2025-10-11
 
 ### 🐛 Bug Fixes

@@ -18,7 +18,7 @@ namespace HKS_NoClip;
 public partial class Main
 {
     private const string SectionOptions = "Options";
-    private const string Version = "0.2.18";
+    private const string Version = "0.2.19";
 
     protected override void PostAwake()
     {
