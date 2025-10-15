@@ -1,9 +1,7 @@
 using HarmonyLib;
 using HKS_NoClip.Behaviour;
 
-// ReSharper disable InconsistentNaming
-
-namespace HKS_NoClip.Patch;
+namespace HKS_NoClip.Patches;
 
 [HarmonyPatch(typeof(HeroController))]
 internal class HeroControllerPatches
@@ -46,7 +44,6 @@ internal class HeroControllerPatches
 
     [HarmonyPatch(nameof(CanTakeDamageIgnoreInvul))]
     [HarmonyPrefix]
-    // ReSharper disable once IdentifierTypo
     private static bool CanTakeDamageIgnoreInvul(HeroController __instance, ref bool __result) =>
         ChangeCanTakeDamage(ref __result);
 }
