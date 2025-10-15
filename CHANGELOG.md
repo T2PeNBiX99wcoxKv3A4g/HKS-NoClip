@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.21](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.20..v0.2.21) - 2025-10-15
+
+### 🐛 Bug Fixes
+
+- Update `BepInExUtils.dll` and `BepInExUtils.Generator.dll` files - ([775c6b3](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/775c6b3588e174874587a9e869bbfd81f87a4f06))
+- Update `BepInDependency` to v0.9.0 and refactor `PostAwake` to `Init` method - ([2fd3423](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/2fd3423677b8b7d4f408ea4cc1fa659001b02837))
+- Update `BepInExUtils.dll` and `BepInExUtils.Generator.dll` files - ([160d372](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/160d3722b44625d95988edf440d87160a8c473b4))
+- Update `BepInExUtils.Generator.dll` file - ([a6b0e5e](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/a6b0e5ee197f95a8a8e525bf30d1a41372a544c8))
+- Update `BepInExUtils.dll` file - ([ba45026](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/ba45026cf9a1c061a9ac2b5c2ba85ee6cad33f27))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([e4fc1be](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/e4fc1be309a1d0f5471d03d87ba506c4e59cfb5a))
+
+
 ## [0.2.20](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.19..v0.2.20) - 2025-10-15
 
 ### 🐛 Bug Fixes
