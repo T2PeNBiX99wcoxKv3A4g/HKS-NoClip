@@ -5,7 +5,7 @@ using UnityEngine;
 namespace HKS_NoClip;
 
 [BepInUtils("io.github.ykysnk.HKS-NoClip", "No Clip", Version)]
-[BepInDependency("io.github.ykysnk.BepinExUtils", "0.9.0")]
+[BepInDependency("io.github.ykysnk.BepinExUtils", "1.0.0")]
 [BepInProcess(Utils.GameName)]
 [ConfigBind<KeyCode>("NoClipToggleKey", SectionOptions, KeyCode.B, "The key to toggle noclip in the game.")]
 [ConfigBind<bool>("TurnOffCol2d", SectionOptions, false,
