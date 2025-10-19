@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.22](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.21..v0.2.22) - 2025-10-19
+
+### 🐛 Bug Fixes
+
+- Update `BepInExUtils.dll` file - ([9a609f4](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/9a609f476c84ae45c17fa299d07a6fef28b6eb92))
+- Update `BepInExUtils.dll` and `BepInExUtils.Generator.dll` files - ([a7394cb](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/a7394cbea09d87e608977cd32320f03fb4b205ec))
+- Update `BepInExUtils.Generator.dll` file - ([8eb336d](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/8eb336d0550a0b9cc8249e0533b18cda50decd8f))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([4c4b31f](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/4c4b31f839fa94b25e4a915c0b011fd4c02ed48d))
+
+
 ## [0.2.21](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.20..v0.2.21) - 2025-10-15
 
 ### 🐛 Bug Fixes
