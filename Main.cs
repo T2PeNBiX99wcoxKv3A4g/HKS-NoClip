@@ -19,7 +19,7 @@ namespace HKS_NoClip;
 public partial class Main
 {
     private const string SectionOptions = "Options";
-    private const string Version = "0.2.22";
+    private const string Version = "0.2.23";
 
     public void Init()
     {

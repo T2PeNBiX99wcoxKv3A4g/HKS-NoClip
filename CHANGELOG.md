@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.23](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.22..v0.2.23) - 2025-10-19
+
+### 🐛 Bug Fixes
+
+- Update `BepInDependency` to v1.0.0 - ([ccb8739](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/ccb8739fa67999348f7d88a7482a393011269731))
+
+### Action
+
+- Update version in `Main.cs` and update `CHANGELOG.md` - ([55755ba](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/commit/55755ba5ffe18bd10599444f49a94a68555b4bb9))
+
+
 ## [0.2.22](https://github.com/T2PeNBiX99wcoxKv3A4g/HKS-NoClip/compare/v0.2.21..v0.2.22) - 2025-10-19
 
 ### 🐛 Bug Fixes
